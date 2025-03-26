@@ -1,18 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100..900&family=Rubik+Wet+Paint&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+
 .main-card {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 40px;
-    background-color: #f8f9fa;
   }
   
   .card {
     background: white;
     padding: 20px;
-    width: 300px;
+    width: 350px;
+    height: 500px;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -22,26 +25,64 @@
   }
   
   .card h1 {
-    font-size: 22px;
-    color: #007bff;
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    
+    text-align: center;
+    font-size: 35px;
+    color: #ff006a;
     margin-bottom: 10px;
+    background-color: transparent !important;
+  }
+  .card h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    margin-top: 15px;
+    background-color: transparent !important;
   }
   
   .card h3 {
-    font-size: 18px;
+  
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+    padding-top: 10px;
+    font-size: 25px !important;
     color: #333;
     margin-top: 15px;
+    background-color: transparent !important;
   }
   
   .card ul {
+    padding-top: 10px !important;
     list-style: none;
     padding: 0;
+    background-color: transparent !important;
   }
   
   .card ul li {
-    font-size: 14px;
+    font-size: 17px;
     color: #555;
     margin: 5px 0;
+    background-color: transparent !important;
+  }
+
+  .btn{
+    width: 200px;
+    height: 50px;
+    background-color: #ffcc00 !important;
+    color: rgb(255, 0, 115) !important;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
   }
   
   @media (max-width: 768px) {

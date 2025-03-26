@@ -1,44 +1,84 @@
-/* styles.css */
-nav{
-    width: 100vw;
-    height: 3vh;
-    background-color: rgb(0, 0, 0) !important;
-    /* box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); */
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-  }
-  
-  .Logo {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #2563eb;
-    background-color: rgb(0, 0, 0) !important;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 24px;
-    list-style: none;
-    background-color: rgb(0, 0, 0) !important;
-    
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    /* color: #4b5563; */
-    transition: color 0.3s ease-in-out;
-    background-color: rgb(0, 0, 0) !important;
-  }
-  
-  .nav-links a:hover {
-    color: #2563eb;
-  }
-
-.sfree{
-  background-color: blue;
-  
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100..900&family=Rubik+Wet+Paint&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100..900&family=Rubik+Wet+Paint&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(100px); 
+  -webkit-backdrop-filter: blur(10px); 
 }
-  
+
+.Logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffcc00;
+  background-color: transparent !important;
+}
+
+.heading{
+  background-color: transparent !important;
+}
+
+/* Navigation Links */
+.nav-links {
+  background-color: transparent !important;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links li {
+  background-color: transparent !important;
+  display: inline;
+}
+
+/* General Link Styles */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+  padding: 8px 12px;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Styled Buttons for "Start for Free" & "Subscriptions" */
+.Sfree,
+.Subscriptions {
+  background-color: #ffcc00;
+  color: black !important;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.Sfree:hover,
+.Subscriptions:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+/* Upload Button */
+.nav-links li:last-child {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li:first-child a {
+  background-color: #555;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.nav-links li:first-child a:hover {
+  background-color: #777;
+}
+
