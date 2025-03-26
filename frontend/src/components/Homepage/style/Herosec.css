@@ -1,23 +1,61 @@
-.herosec{
-    width: 100vw;
+.herosec {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-.left{
-    width: 50%;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background-color: #f8f9fa;
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .left p {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .right {
+    flex: 1;
     display: flex;
-    flex-wrap:wrap;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 100px;
-}
-.right{
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
-.right img{
-    width: 70%;
-    padding: 10px;
-    border-radius: 20px;
-}
+    justify-content: center;
+  }
+  
+  .right img {
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .herosec {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 5%;
+    }
+  
+    .left p {
+      font-size: 28px;
+    }
+  
+    .right img {
+      max-width: 80%;
+    }
+  }
+  
+  /* Smooth Image Fade-in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
