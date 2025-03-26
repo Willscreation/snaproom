@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100..900&family=Rubik+Wet+Paint&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100..900&family=Rubik+Wet+Paint&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 .herosec {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 60px 10%;
-    background-color: #f8f9fa;
   }
   
   .left {
@@ -11,8 +12,10 @@
   }
   
   .left p {
-    font-size: 36px;
-    font-weight: bold;
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
     color: #007bff;
     text-transform: uppercase;
     letter-spacing: 1.5px;

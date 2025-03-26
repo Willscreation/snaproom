@@ -7,6 +7,7 @@ const Hero = () => {
     <div className='herosec'>
         <div className='left'>
             <div><p>Snap. Upload. Share.</p></div>
+            <a href="">Lets start</a>
         </div>
         <div className='right'>
             <img src={hero} alt="" />

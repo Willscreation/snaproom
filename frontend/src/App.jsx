@@ -5,16 +5,19 @@ import Navbar from "./components/Navbar";
 import ImageUploader from "./components/ImageUploader";
 import Subscription from "./components/subscription/Subscription";
 import Hero from "./components/Homepage/Herosec";
+import Loader from "./components/loader/Loader";
 
 const App = () => {
   return (
+    <>
+    <Loader />
     <Router>
       <Navbar />
       <Hero/>
       <Subscription />
-      <div>
+      {/* <div>
         <ImageUploader />
-      </div>
+      </div> */}
       {/* 🔹 Wrap Routes inside <Routes> */}
       <Routes>
         <Route path="/" element={<h1>Home Page</h1>} />
@@ -22,6 +25,7 @@ const App = () => {
         <Route path="/subscriptions" element={<h1>Subscriptions</h1>} />
       </Routes>
     </Router>
+    </>
   );
 };
 
