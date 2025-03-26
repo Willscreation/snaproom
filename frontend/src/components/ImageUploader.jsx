@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "../components/styles/ImageUploader.css"; // Import your CSS file for styling
+
+
 
 const ImageUploader = () => {
   const [image, setImage] = useState(null);
@@ -9,7 +12,7 @@ const ImageUploader = () => {
 
   const eventCode = 6600; // Fixed event code
 
-  // Fetch all images when component mounts
+  // Fetch images on component mount
   useEffect(() => {
     fetchImages();
   }, []);
@@ -42,7 +45,7 @@ const ImageUploader = () => {
     formData.append("image", image);
     formData.append("eventname", "Team 6600");
     formData.append("eventcode", eventCode);
-    formData.append("password", "securepassword"); // Password can be removed if not needed
+    formData.append("password", "securepassword");
 
     try {
       setLoading(true);
@@ -86,9 +89,12 @@ const ImageUploader = () => {
         <p>No images uploaded yet.</p>
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {uploadedImages.map((img, index) => (
-            <div key={index} className="border p-2 rounded">
-              <img src={img.url} alt={`Uploaded ${index}`} className="w-full h-40 object-cover" />
+          {uploadedImages.map((img) => (
+            <div key={img._id} className="border p-2 rounded">
+              <img src={img.url} alt="Uploaded" className="w-full h-40 object-cover rounded" />
+              <p className="text-sm text-gray-600 mt-2">
+                Uploaded on: {new Date(img.timestamps).toLocaleString()}
+              </p>
             </div>
           ))}
         </div>
